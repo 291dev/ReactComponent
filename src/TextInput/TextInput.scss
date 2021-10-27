@@ -1,0 +1,27 @@
+$error_color: red;
+
+.text-form {
+  border-color: lightgray;
+  border-radius: 0.2em;
+  border-width: 1px;
+  padding: 0.4em;
+  &.error {
+    border-color: $error_color;
+  }
+
+  &:disabled {
+    border-color: lightgray;
+    background-color: lightgray;
+  }
+
+  &:focus {
+    outline: blue;
+    &.error {
+      outline: $error_color;
+    }
+  }
+}
+
+.fullwidth {
+  width: 100%;
+}
